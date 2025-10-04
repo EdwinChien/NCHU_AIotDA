@@ -167,3 +167,86 @@ pip install -r requirements.txt
 ```
 好的，我會將我們之間所有的對話紀錄整理後寫入 `log.md` 檔案。
 ```
+
+---
+
+### 對話 6: 部署到 GitHub 與 Streamlit
+
+**User:**
+```
+我要上傳到GitHub,並把我的app部署到streamlit io給其他人看
+```
+
+**Gemini:**
+```
+好的，這是一個很棒的計畫！將您的應用程式部署到 Streamlit Community Cloud (之前叫做 Streamlit Share) 非常簡單。
+
+整個流程分為兩大步驟：
+
+1.  **將您的專案上傳到一個公開的 GitHub 儲存庫 (Repository)。**
+2.  **在 Streamlit Community Cloud 網站上連結您的 GitHub 儲存庫來進行部署。**
+
+我會一步步引導您完成。
+
+### **第一步：上傳專案到 GitHub**
+
+首先，我們需要檢查目前的 Git 狀態，並建立一個本地的 Git 儲存庫。
+... (Git 初始化與檔案追蹤過程) ...
+
+### **下一步：在 GitHub 上建立儲存庫**
+
+現在，請您手動完成以下步驟：
+
+1.  **前往 [GitHub](https://github.com/) 並登入您的帳戶。**
+2.  **點擊右上角的 `+` 號，然後選擇 `New repository`。**
+3.  **為您的儲存庫命名** (例如：`streamlit-regression-app`)。
+4.  **選擇 `Public`** (這是 Streamlit Community Cloud 的要求)。
+5.  **不要**勾選 "Add a README file", "Add .gitignore", 或 "Choose a license"。我們已經在本地建立好所有檔案了。
+6.  **點擊 `Create repository`。**
+
+完成後，GitHub 會顯示一個頁面，上面有您的儲存庫 URL。**請將那個 URL 複製起來，然後貼給我。**
+```
+
+**User:**
+```
+https://github.com/EdwinChien/NCHU_AIotDA.git
+```
+
+**Gemini:**
+```
+好的，謝謝您提供 URL。
+
+現在我會將您的本地儲存庫連接到您在 GitHub 上建立的遠端儲存庫，並將程式碼推送上去。
+... (Git remote add, branch rename, and push 過程) ...
+
+**成功！** 您的程式碼現在已經上傳到 GitHub 了。您可以重新整理您的 GitHub 頁面來確認。
+
+---
+
+### **第二步：部署到 Streamlit Community Cloud**
+
+現在，請您手動完成最後的部署步驟：
+
+1.  **前往 [Streamlit Community Cloud](https://share.streamlit.io/) 並登入。** 建議使用您的 GitHub 帳戶登入，這樣會更方便。
+2.  **點擊右上角的 `New app` 按鈕。**
+3.  **在 `Deploy an app` 頁面，選擇您剛剛建立的儲存庫** (`EdwinChien/NCHU_AIotDA`)。
+4.  **確認 `Branch` 是 `main`。**
+5.  **確認 `Main file path` 是 `app.py`。**
+6.  **點擊 `Deploy!` 按鈕。**
+
+Streamlit 會開始自動部署您的應用程式。您會看到一個安裝過程的畫面，通常需要一到兩分鐘。完成後，您的應用程式就會在網路上公開，並且您會得到一個專屬的 `.streamlit.app` 網址，可以分享給任何人！
+```
+
+---
+
+### 對話 7: 更新 Log 並 Push
+
+**User:**
+```
+幫我更新所有的對話到log.md並且一起push到GitHub
+```
+
+**Gemini:**
+```
+好的，我會更新 `log.md` 並將所有變更推送到您的 GitHub 儲存庫。
+```
